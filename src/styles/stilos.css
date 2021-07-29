@@ -10,7 +10,6 @@ header {
   height: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 * {
@@ -32,16 +31,46 @@ header {
   margin-bottom: 30px;
 }
 
+.bars__menu {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .header--navigationbar {
   width: 146px;
-  height: 460px;
-  border: 1px solid black;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+.header--navigationbar ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+.header--navigationbar li {
+  padding-bottom: 10px;
+  margin: 40px auto;
+  font-size: 3.2rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+}
+.header--navigationbar li a {
+  color: #000000;
+  text-decoration: none;
+}
+.header--navigationbar li a:hover {
+  text-decoration: underline;
+}
+
+.header--navigationbar:hover ul, .menu__responsive:hover {
+  height: 460px;
+  display: block;
+  position: relative;
 }
 
 .header--socialmedia {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100px;
   height: auto;
@@ -52,6 +81,42 @@ header {
 .header--socialmedia p {
   font-size: 1.8rem;
   margin: 0 auto;
+}
+
+.header--navigationbar:hover .header--socialmedia, .header--socialmedia:hover {
+  display: flex;
+}
+
+.main__principalSection {
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main__principalSection p {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444a4a;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.main__principalSection h1 {
+  color: #000000;
+  margin: 0 auto;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 2.1rem;
+  margin-bottom: 15px;
+}
+.main__principalSection button {
+  width: auto;
+  height: auto;
+  align-self: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2d635e;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=stilos.css.map */
