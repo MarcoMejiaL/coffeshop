@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --lightPink:#f195b2;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header_area {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  z-index: 30;
+}
+
+.miniMenu {
+  margin: 0px;
+  background: var(--lightPink);
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniMenu::before {
+  content: "";
+  width: 100%;
+  border-bottom: 1px dashed var(--lightPink);
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+}
+
+.miniMenu__contenedor {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.miniMenu__contenedor div {
+  display: block;
+}
+
+.minuMenu__contenedor-floatLeft {
+  float: left;
+}
+.minuMenu__contenedor-floatLeft a {
+  color: #fff;
+  font-size: 1.6em;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  background: transparent;
+  cursor: pointer;
+}
+.minuMenu__contenedor-floatLeft a i {
+  padding-right: 7px;
+}
+.minuMenu__contenedor-floatLeft a + a {
+  margin-left: 35px;
+}
+
+.minuMenu__contenedor-socialMedia {
+  float: right;
+}
+.minuMenu__contenedor-socialMedia ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.minuMenu__contenedor-socialMedia ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.minuMenu__contenedor-socialMedia ul li a {
+  display: inline-block;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.6em;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=estilos.css.map */
