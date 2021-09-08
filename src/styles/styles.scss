@@ -32,6 +32,7 @@ html{
     
 }
 
+
 .main_header_area{
     position: absolute;
     left: 0px;
@@ -71,6 +72,7 @@ html{
 }
 .minuMenu__contenedor-floatLeft{
     float: left;
+    margin-top: 15px;
     a{
         color: #fff;
         font-size: 1.6em;
@@ -116,5 +118,50 @@ html{
             cursor: pointer;
         }
     }
+    }
+}
+.mainMenu{
+    position: relative;
+    background: #fff ;
+    div{
+        display: block;
+    }
+}
+.mainMenu::before{
+    content: "";
+    background: url(../img/menu-draw.png) no-repeat scroll center center;
+    height: 19px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -13px;
+    z-index: 30;
+}
+.mainMenu__Contenedor{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.logonNavBar{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space:nowrap;
+    a{
+        text-decoration: none;
+        vertical-align: middle;
+        background: transparent;
+        cursor: pointer;
     }
 }
